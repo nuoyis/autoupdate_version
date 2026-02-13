@@ -44,9 +44,13 @@ def save_versions(versions):
 
     # with open(CACHE_FILE, "w", encoding="utf-8") as f:
     #     json.dump(output, f, indent=4)
+    path = "./json"
+
+    if not os.path.exists(path):
+        os.makedirs(path)
     for i in versions:
         output = {"versions": versions[i]}  # 包裹一层 "versions"
-        with open(i+".json", "w", encoding="utf-8") as f:
+        with open(os.path.join(path, i+".json"), "w", encoding="utf-8") as f:
             json.dump(output, f, indent=4)
 
 def main():
