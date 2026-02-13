@@ -1,4 +1,4 @@
-nuoyis autoupdate verison webside
+nuoyis autoupdate verison webside  
 how to use?
 ```
 http://version.nuoyis.net/json/nginx.json
